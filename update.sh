@@ -15,7 +15,7 @@ git_update()
         echo 'update from git repository'
         git pull origin master
     else
-        git clone git://github.com/webzhao/dotfiles.git .dotfiles
+        git clone git://github.com/melonHuang/dotfiles.git .dotfiles
         cd .dotfiles
         sh install.sh
     fi
@@ -28,7 +28,7 @@ zip_update()
 
     # download file
     echo "downloading $ZIP_FILE ..."
-    curl https://codeload.github.com/webzhao/dotfiles/zip/master -k -o $ZIP_FILE
+    curl https://codeload.github.com/melonHuang/dotfiles/zip/master -k -o $ZIP_FILE
 
     # unzip archive
     echo "deflating $ZIP_FILE ..."

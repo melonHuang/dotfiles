@@ -8,12 +8,15 @@ fi
 ln -sf "$PWD/vim" ~/.vim
 ln -sf "$PWD/vim/vimrc" ~/.vimrc
 
-# link bash files
-ln -sf "$PWD/bash/bash_profile" ~/.bash_profile
+# link zsh files
+ln -sf "$PWD/zsh/zshrc" ~/.zshrc
 
 # link z.sh files
 ln -sf "$PWD/z/z.sh" ~/.z.sh
 
-# source new bash profile
-source ~/.bash_profile
+#git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+#chsh -s /bin/zsh
+# source new zsh profile
+#source ~/.zshrc
+
 
