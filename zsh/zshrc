@@ -1,3 +1,9 @@
+# User specific environment and startup programs
+export LANG=zh_CN.utf8
+export SVN_EDITOR=vim
+alias grep='grep --color'
+alias tailf='tail -f'
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
