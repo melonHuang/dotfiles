@@ -14,9 +14,9 @@ ln -sf "$PWD/zsh/zshrc" ~/.zshrc
 # link z.sh files
 ln -sf "$PWD/z/z.sh" ~/.z.sh
 
-#git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-#chsh -s /bin/zsh
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+chsh -s /bin/zsh
 # source new zsh profile
-#source ~/.zshrc
+source ~/.zshrc
 
 

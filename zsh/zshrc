@@ -48,7 +48,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/huangwei/.rvm/gems/ruby-2.0.0-p247/bin:/Users/huangwei/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/huangwei/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/huangwei/.rvm/bin:/Users/huangwei/.rvm/bin
 
 # z.sh
-. ~/z.sh
+. ~/.z.sh
      function precmd () {
        z --add "$(pwd -P)"
      }
