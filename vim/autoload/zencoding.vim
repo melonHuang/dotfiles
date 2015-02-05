@@ -1110,7 +1110,8 @@ let s:zen_settings = {
 \            'pgba:l': 'page-break-after:left;',
 \            'pgba:r': 'page-break-after:right;',
 \            'orp': 'orphans:|;',
-\            'wid': 'widows:|;'
+\            'wid': 'widows:|;',
+\            'css:reset': 'body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}'
 \        },
 \        'filters': 'fc'
 \    },
@@ -1165,10 +1166,11 @@ let s:zen_settings = {
 \                    ."</head>\n"
 \                    ."<body>\n\t${child}|\n</body>\n"
 \                    ."</html>",
-\            'html:5': "<!DOCTYPE HTML>\n"
-\                    ."<html lang=\"${lang}\">\n"
+\            'html:5': "<!DOCTYPE html>\n"
+\                    ."<html>\n"
 \                    ."<head>\n"
 \                    ."    <meta charset=\"${charset}\">\n"
+\                    ."    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\" /    >\n"
 \                    ."    <title></title>\n"
 \                    ."</head>\n"
 \                    ."<body>\n\t${child}|\n</body>\n"
@@ -1212,7 +1214,7 @@ let s:zen_settings = {
 \                    ."        <script src=\"../nova.slide.js\"></script>\n"
 \                    ."    </body>\n"
 \                    ."</html>",
-\            'comment:zone': "/***********************************************************/\n"
+\            'comment:zone': "/***************************** comment ******************************/\n"
 \        },
 \        'default_attributes': {
 \            'a': {'href': ''},
@@ -1235,6 +1237,7 @@ let s:zen_settings = {
 \            'meta:utf': [{'http-equiv': 'Content-Type'}, {'content': 'text/html;charset=UTF-8'}],
 \            'meta:win': [{'http-equiv': 'Content-Type'}, {'content': 'text/html;charset=Win-1251'}],
 \            'meta:compat': [{'http-equiv': 'X-UA-Compatible'}, {'content': 'IE=7'}],
+\            'meta:viewport': [{'name': 'viewport'}, {'content': 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}],
 \            'style': {'type': 'text/css'},
 \            'script': {'type': 'text/javascript'},
 \            'script:src': [{'type': 'text/javascript'}, {'src': ''}],
