@@ -12,7 +12,7 @@ cd ~ && curl -kL https://raw.github.com/melonHuang/dotfiles/master/update.sh -k 
 ### Update
 
 ```sh
-cd ~/.dotfiles && sh update.sh
+cd ~/.dotfiles && sh install.sh
 ```
 
 
