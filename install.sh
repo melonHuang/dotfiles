@@ -13,12 +13,14 @@ ln -sf "$PWD/z/z.sh" ~/.z.sh
 
 which zsh
 # 安装了zsh
-if [[ $0 == 0 ]]; then
+if hash zsh 2>/dev/null; then
+#if [[ $0 == 0 ]]; then
     # link zsh files
     ln -sf "$PWD/zsh/zshrc" ~/.zshrc
 
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     chsh -s /bin/zsh
+    zsh
     # source new zsh profile
     source ~/.zshrc
 else
@@ -26,6 +28,5 @@ else
     ln -sf "$PWD/bash/bash_profile" ~/.bash_profile
     source ~/.bash_profile
 fi
-
 
 
