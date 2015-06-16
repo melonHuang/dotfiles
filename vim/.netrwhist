@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/huangwei/Desktop/webRoot/shake'
+let g:netrw_dirhist_2='/Users/huangwei/Desktop/webRoot/feedback'
+let g:netrw_dirhist_3='/Users/huangwei/Desktop/webRoot/anquanzongjie2014'
+let g:netrw_dirhist_4='/Users/huangwei/Desktop/webRoot/test'
+let g:netrw_dirhist_5='/private/etc'
+let g:netrw_dirhist_6='/Users/huangwei/Desktop/webRoot/360root/static/css'
