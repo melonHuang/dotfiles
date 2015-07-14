@@ -41,13 +41,14 @@ let smarty_right_delimiter='%}'
 au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.json set filetype=javascript
 
-"zencoding
-let g:user_zen_settings = {
+"emmet
+let g:user__settings = {
 \ 	'smarty': {
 \ 		'extends': 'html'
 \ 	}
 \}
-let g:user_zen_expandabbr_key='<C-e>'
+"let g:user_emmet_leader_key='<C-e>'
+let g:user_emmet_leader_key='<tab>'
 
 "plugin
 filetype plugin indent on

@@ -63,3 +63,10 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/huangwei/.
 #alias qnpm="npm --registry=http://npm.qiwoo.org:8360 --cache=$HOME/.npm/.cache/qnpm --userconfig=$HOME/.qnpmrc"
 
 #/bin/bash -c /bin/zsh
+
+
+alias cnpm="npm --registry=https://r.cnpmjs.org \
+    --cache=$HOME/.npm/.cache/cnpm \
+    --disturl=https://cnpmjs.org/mirrors/node \
+    --userconfig=$HOME/.cnpmrc"
+
